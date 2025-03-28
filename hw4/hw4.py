@@ -16,9 +16,9 @@ rotated_nearest = cv2.warpAffine(image, M, (size, size), flags=cv2.INTER_NEAREST
 # bilinear interpolation
 rotated_bilinear = cv2.warpAffine(image, M, (size, size), flags=cv2.INTER_LINEAR)
 
-cv2.imwrite("original.png", image)                # 儲存原始影像
-cv2.imwrite("rotated_nearest.png", rotated_nearest)  # 儲存最近鄰插值結果
-cv2.imwrite("rotated_bilinear.png", rotated_bilinear)  # 儲存雙線性插值結果
+cv2.imwrite("original.png", image) 
+cv2.imwrite("rotated_nearest.png", rotated_nearest) 
+cv2.imwrite("rotated_bilinear.png", rotated_bilinear) 
 
 # 顯示結果
 fig, axs = plt.subplots(1, 3, figsize=(12, 4))
